@@ -3,4 +3,4 @@ This project was part of my Masters thesis. Objective was the design and develop
 The project was selected for Gandhian Young Techonological Innovation Award 2015 and INAE best M.Tech Thesis award 2015.
 
 
-Please run the main_simulink_flow_diagram.mdl file to load the entire simulink model of the controller along with the dynamics of the 6 DOF autonomous underwater vehicle.
+Please run the \textbf{main_simulink_flow_diagram.mdl} file to load the entire simulink model of the controller along with the dynamics of the 6 DOF autonomous underwater vehicle.
