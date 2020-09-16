@@ -1,0 +1,45 @@
+
+
+% for t=1:1:2000;
+% yawd(t)= atan2(50*cos(0.05*t),(t+10*sin(.1*t)))*180/pi
+% end
+% t=1:1:2000
+% plot(t,yawd);
+% grid on;
+
+m=1000;
+% j=1;
+% for t=0.01:.01:200
+%     yaw_d(j)=0;
+%     for n=1:1:m
+%         yaw_d(j)=yaw_d(j)+1/(20*pi)*((64*pi^2/(5*n)-40*pi/n)*sin(pi*n/10)-32*pi/n^2*cos(pi*n/10))*sin(pi*n/2)*sin(n*pi*t/(20*pi));
+%     end
+%     j=j+1;
+% end
+%  t=.01:.01:200;
+%  plot(t,yaw_d);
+ 
+
+j=1; 
+% for t=0.01:.01:200
+%     pitch_d(j)=-2*pi;
+%     for n=1:1:m
+%         pitch_d(j)=pitch_d(j)+sin(n*t/10)/(5*n*pi);
+%     end
+%     j=j+1;
+%     end
+% figure(2),
+%  t=.01:.01:200;
+%  plot(t,pitch_d);
+ 
+ j=1; 
+for t=0.01:.01:200
+    pitch_d(j)=-2*pi;
+    for n=1:1:m
+        pitch_d(j)=pitch_d(j)-2*sin(n*t/10)/(n);
+    end
+    j=j+1;
+    end
+figure(2),
+ t=.01:.01:200;
+ plot(t,pitch_d);
